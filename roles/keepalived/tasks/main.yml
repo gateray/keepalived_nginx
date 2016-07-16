@@ -1,0 +1,14 @@
+---
+- name: install mailx
+  yum: name=mailx state=present  
+
+- name: install keepalived
+  yum: name=keepalived state=present
+
+- name: copy config file and chk_script to keepalived
+  template: src={{ item }} dest=/etc/keepalived/{{ item }}
+  with_items:
+    - keepalived.conf
+    - notify.sh
+    - chkngx.sh
+  notify: start keepalived service

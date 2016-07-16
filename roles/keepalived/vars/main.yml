@@ -1,0 +1,8 @@
+---
+vip1: 192.168.124.251
+vip2: 192.168.124.252
+from: ops@xxx.com
+to: admin@xxx.com
+user: ops@xxx.com
+pwd: mypasswd
+iface: eno16777736

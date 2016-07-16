@@ -1,0 +1,7 @@
+---
+srcpath: "/usr/local/src"
+nginxtar: "nginx-1.10.1.tar.gz"
+nginxpath: "/usr/local/nginx"
+nginxuser: "www"
+nginxgroup: "www"
+
